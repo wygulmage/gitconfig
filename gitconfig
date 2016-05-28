@@ -7,6 +7,6 @@
   co = commit
   st = status
   br = branch
-  hist = log --format='%h %ar  %an %s%d' --graph --date=short
+  hist = log --format='%C(dim)%h | %ar%Creset, %an %s%C(dim)%d%Creset' --graph --date=short
   type = cat-file -t
   dump = cat-file -p
