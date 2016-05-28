@@ -1,0 +1,12 @@
+[user]
+	name = Keith Wygant
+	email = keith.wygant@gmail.com
+
+[alias]
+  ch = checkout
+  co = commit
+  st = status
+  br = branch
+  hist = log --format='%h %ar  %an %s%d' --graph --date=short
+  type = cat-file -t
+  dump = cat-file -p
