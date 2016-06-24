@@ -23,3 +23,5 @@
 	cmd = /Index/keith/Programs/p4v/current/bin/p4merge $LOCAL $REMOTE
 [core]
 	editor = emacs
+[push]
+	default = simple
