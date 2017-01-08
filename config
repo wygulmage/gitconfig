@@ -13,15 +13,16 @@
 [merge]
 	tool = p4mergetool
 [mergetool "p4mergetool"]
-	cmd = /Index/keith/Programs/p4v/current/bin/p4merge $PWD/$BASE $PWD/$LOCAL $PWD/$REMOTE $PWD/$MERGED
+	cmd = /Ix/k/Programs/p4v/current/bin/p4merge $PWD/$BASE $PWD/$LOCAL $PWD/$REMOTE $PWD/$MERGED
 	trustExitCode = false
 [mergetool]
 	keepBackup = false
 [diff]
 	tool = p4mergetool
 [difftool "p4mergetool"]
-	cmd = /Index/keith/Programs/p4v/current/bin/p4merge $LOCAL $REMOTE
+	cmd = /Ix/k/Programs/p4v/current/bin/p4merge $LOCAL $REMOTE
 [core]
 	editor = emacs
+	excludesfile = /home/k/.config/git/gitignore_global
 [push]
 	default = simple
