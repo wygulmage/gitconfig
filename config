@@ -26,3 +26,5 @@
 	excludesfile = /home/k/.config/git/gitignore_global
 [push]
 	default = simple
+[credential]
+	helper = cache
