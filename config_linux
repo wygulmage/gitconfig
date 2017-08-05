@@ -2,9 +2,9 @@
 	tool = p4mergetool
 [mergetool "p4mergetool"]
 	cmd = /Ix/k/Programs/p4v/current/bin/p4merge $PWD/$BASE $PWD/$LOCAL $PWD/$REMOTE $PWD/$MERGED
-	trustExitCode = false
-[mergetool]
 	keepBackup = false
+  keepTemporaries = false
+	trustExitCode = false
 [diff]
 	tool = p4mergetool
 [difftool "p4mergetool"]

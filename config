@@ -1,7 +1,9 @@
 [user]
 	name = Keith
 	email = wygulmage@users.noreply.github.com
-
+[core]
+	editor = emacs
+	excludesfile = gitignore_global
 [alias]
   ch = checkout
   co = commit
@@ -10,9 +12,7 @@
   hist = log --format='%C(dim)%h | %ar%Creset, %an %s%C(dim)%d%Creset' --graph --date=short
   type = cat-file -t
   dump = cat-file -p
-[core]
-	editor = emacs
-	excludesfile = /home/k/.config/git/gitignore_global
+  pr = pull --rebase
 [push]
 	default = simple
 [credential]
