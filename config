@@ -1,19 +1,14 @@
-[user]
-	name = Keith
-	email = wygulmage@users.noreply.github.com
-[core]
-	editor = emacs
-	excludesfile = gitignore_global
-[alias]
-  ch = checkout
-  co = commit
-  st = status
-  br = branch
-  hist = log --format='%C(dim)%h | %ar%Creset, %an %s%C(dim)%d%Creset' --graph --date=short
-  type = cat-file -t
-  dump = cat-file -p
-  pr = pull --rebase
-[push]
-	default = simple
-[credential]
-	helper = cache
+[merge]
+	tool = p4mergetool
+[mergetool "p4mergetool"]
+	cmd = /Ix/k/Programs/p4v/current/bin/p4merge $PWD/$BASE $PWD/$LOCAL $PWD/$REMOTE $PWD/$MERGED
+	keepBackup = false
+  keepTemporaries = false
+	trustExitCode = false
+[diff]
+	tool = p4mergetool
+[difftool "p4mergetool"]
+	cmd = /Ix/k/Programs/p4v/current/bin/p4merge $LOCAL $REMOTE
+[include]
+  path = config_generic
+
