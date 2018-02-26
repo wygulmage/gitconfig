@@ -1,9 +1,9 @@
 [user]
-	name = Keith
-	email = wygulmage@users.noreply.github.com
+  name = Keith
+  email = wygulmage@users.noreply.github.com
 [core]
-	editor = emacs
-	excludesfile = gitignore_global
+  editor = emacs
+  excludesfile = gitignore_global
 [alias]
   ch = checkout
   co = commit
@@ -14,6 +14,6 @@
   dump = cat-file -p
   pr = pull --rebase
 [push]
-	default = simple
+  default = simple
 [credential]
-	helper = cache
+  helper = cache
